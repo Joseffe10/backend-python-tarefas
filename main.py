@@ -25,7 +25,7 @@ DB_SID = os.getenv("DB_SID")
 DB_USER = os.getenv("DB_USER")
 DB_PASS = os.getenv("DB_PASS")
 
-proximo_id: int = 5  # contador de ID automático
+proximo_id: int = 0  # contador de ID automático
 
 # Rota para criar uma nova tarefa (ID gerado automaticamente no backend Python)
 @app.post("/tarefas", response_model=Tarefa)
